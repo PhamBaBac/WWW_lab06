@@ -11,7 +11,7 @@
 ![image](https://github.com/PhamBaBac/WWW_lab06/assets/99248518/dbcc7ad4-7206-48fa-ab07-27431d878364)
 ![image](https://github.com/PhamBaBac/WWW_lab06/assets/99248518/19c73862-a2dd-4952-8a21-8967ea2e12c7)
 
-### Nhấn vào tiêu đề của một bài post => postDetail
+## Nhấn vào tiêu đề của một bài post => postDetail
 ## Có thể xem và thêm các bình luận
 ## Nếu bạn là tác giả bài viết có thể delete và update bài 
 ![image](https://github.com/PhamBaBac/WWW_lab06/assets/99248518/2b4642b3-665c-4a9b-b930-797387f141e4)
