@@ -19,7 +19,7 @@ public class PostComment {
     @JoinColumn(name = "post_id")
     private Post post;
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "parent_id")
+    @JoinColumn(name = "parent_id", nullable = false)
     private PostComment parent;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
