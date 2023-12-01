@@ -1,6 +1,6 @@
 # Create web pages that act like a blog web site.
 
-## Nhập địa chỉ ocalhost:8080/login để đăng nhập
+## Nhập địa chỉ localhost:8080/login để đăng nhập
 ![image](https://github.com/PhamBaBac/WWW_lab06/assets/99248518/2ee9b39a-33ca-48f6-a599-90c954f75c57)
 
 ## Nhập vào register để đăng kí nếu chưa có tài khoản => register
