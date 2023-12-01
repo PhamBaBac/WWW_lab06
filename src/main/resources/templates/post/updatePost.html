@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Cập nhật bài đăng</title>
+    <!-- Thêm thư viện Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cập nhật bài đăng</h1>
+    <form th:action="@{/posts/update/{id}(id=${post.id})}" method="post">
+        <div class="form-group">
+            <label for="meta_title">Meta title:</label><br>
+            <input type="text" id="meta_title" name="metaTitle" th:value="${post.metaTitle}" class="form-control"><br>
+        </div>
+        <div class="form-group">
+            <label for="content">Nội dung:</label><br>
+            <textarea id="content" name="content" th:text="${post.content}" class="form-control"></textarea><br>
+        </div>
+        <input type="submit" value="Cập nhật bài đăng" class="btn btn-primary">
+    </form>
+</div>
+</body>
+</html>

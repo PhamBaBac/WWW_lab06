@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Post List</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        .post {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3>Posts</h3>
+    <a href="/posts/new" class="btn btn-primary mb-3">Create New Post</a>
+    <div class="row">
+        <div class="col-md-4" th:each="post : ${posts}">
+            <div class="post">
+                <h3><a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}"></a></h3>
+                <p th:text="${post.summary}"></p>
+                <p><strong>Published At:</strong> <span th:text="${#temporals.format(post.publishedAt, 'dd-MM-yyyy')}"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
